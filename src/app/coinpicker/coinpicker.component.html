@@ -1,0 +1,22 @@
+<div class="container-fluid mt-3 mb-3">
+    <div class="row row-header">
+        <div class="col-1">#</div>
+        <div class="col-3">Name</div>
+        <div class="col-2">Price</div>
+        <div class="col-2">Target</div>
+        <div class="col-4 text-center">Score (100)</div>
+        <hr>
+    </div>
+    <div class="row row-content mt-1 mb-1" *ngFor="let coin of potentialcoin">
+        <div class="col-1">{{coin.id}}</div>
+        <div class="col-3">
+            <img src="{{coin.logo}}" alt="{{coin.name}} logo">
+            {{coin.name}}
+            <span class="fw-lighter">{{coin.description | uppercase}}</span>
+        </div>
+        <div class="col-2">${{coin.price}}</div>
+        <div class="col-2">${{coin.target}}</div>
+        <div class="col-4 text-center text-success fw-bold">{{coin.score}}</div>
+        <hr class="mt-2 mb-2">
+    </div>
+</div>
