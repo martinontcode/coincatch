@@ -1,0 +1,20 @@
+<div class="container-fluid mt-3 mb-3">
+    <div class="row row-header">
+        <div class="col-1">#</div>
+        <div class="col-6">Name</div>
+        <div class="col-4">Status</div>
+        <hr>
+    </div>
+    <div class="row row-content mt-1 mb-1 d-flex align-items-center" *ngFor="let coin of portfoliocoin">
+        <div class="col-1">{{coin.id}}</div>
+        <div class="col-6">
+            <img src="{{coin.logo}}" alt="{{coin.name}}} logo">
+            {{coin.name}}
+            <span class="fw-lighter">{{coin.description}}</span>
+        </div>
+        <div class="col-4">
+            <span class="badge bg-success mt-1 mb-1 pt-2 pb-2"><i class="bi bi-caret-up-fill"></i> {{((coin.current_price - coin.purchase_price) / coin.purchase_price) * 100 | number}} %</span>
+        </div>
+        <hr class="mt-2 mb-2">
+    </div>
+</div>

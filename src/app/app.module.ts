@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './menu/navbar/navbar.component';
 import { CoinpickerComponent } from './coinpicker/coinpicker.component';
+import { CoinportfolioComponent } from './coinportfolio/coinportfolio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CoinpickerComponent
+    CoinpickerComponent,
+    CoinportfolioComponent
   ],
   imports: [
     BrowserModule,
