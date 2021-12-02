@@ -9,16 +9,12 @@
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
-.header-container {
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 40px;
-}
 .row-header {
-    color: #CCCCCC;
+    color: #1C1C1C;
+    font-size: 20px;
 }
-.column-container {
-    border: 1px solid #D3D3D3;
-    border-radius: 4px;
+.row-content {
+    color: #1C1C1C;
+    font-size: 20px;
+    line-height: 28px;
 }
